@@ -323,7 +323,6 @@
   }
   
   .section-subtitle::after {
-    content: url('../images/separator.svg');
     display: block;
     width: 100px;
     margin-inline: auto;
@@ -918,7 +917,6 @@
     transform: translateX(-50%);
     width: 140px;
     height: 100%;
-    background-image: url('../images/img-pattern.svg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
