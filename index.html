@@ -22,6 +22,25 @@
     <link rel="preload" as="image" href=""> 
     <link rel="preload" as="image" href=""> 
 
+    <style>
+   
+
+      .map-container {
+          position: relative;
+          width: 100%;
+          padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      }
+
+      .map-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+      }
+  </style>
+
 </head>
 <body>
     
@@ -131,7 +150,7 @@
                     </li>
           
                     <li class="navbar-item">
-                      <a href="#" class="navbar-link hover-underline">
+                      <a href="courses.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
           
                         <span class="span">Courses</span>
@@ -139,7 +158,7 @@
                     </li>
           
                     <li class="navbar-item">
-                      <a href="#" class="navbar-link hover-underline">
+                      <a href="contact.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
           
                         <span class="span">Contact Us</span>
@@ -288,12 +307,6 @@
           <ion-icon name="chevron-forward"></ion-icon>
         </button>
 
-        <a href="#" class="hero-btn has-after">
-          <img src="./assest/img/kha-1.png" width="48" height="48" alt="booking icon">
-
-          <span class="label-2 text-center span">Book A Table</span>
-        </a>
-
       </section>
 
 
@@ -404,113 +417,63 @@
       <!-- 
         - #ABOUT
       -->
-<!-- 
+
       <section class="section about text-center" aria-labelledby="about-label" id="about">
         <div class="container">
 
           <div class="about-content">
 
-            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+            <p class="label-2 section-subtitle" id="about-label"> Barista Classes</p>
 
-            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+            <h2 class="headline-1 section-title">More than 40+ have joined</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+              Unlock the secrets of the perfect brew and elevate your coffee-making skills with our comprehensive barista classes.
+               At Second Cup Coffee and Barista School, we offer a range of courses designed for everyone from beginners to aspiring professionals. 
+               Our experienced instructors will guide you through the art and science of coffee, from understanding the origins of beans to mastering 
+               the intricacies of latte art. Whether you're looking to start a career in the coffee industry or simply want to impress friends with your 
+               barista skills, our hands-on classes provide the knowledge and experience you need to excel. Join us today and embark on a journey to become a true coffee connoisseur!
             </p>
 
             <div class="contact-label">Book Through Call</div>
+            <a href="tel:+977 9865457731" class="body-1 contact-number hover-underline">
+              +977 9865457731
+          </a>
+            
 
-            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
-
-            <a href="#" class="btn btn-primary">
-              <span class="text text-1">Read More</span>
-
-              <span class="text text-2" aria-hidden="true">Read More</span>
-            </a>
-
+          
           </div>
 
           <figure class="about-banner">
 
-            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
-              class="w-100" data-parallax-item data-parallax-speed="1">
+            <a href="./assest/img/std-3.jpg"><img src="./assest/img/std-3.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1"></a>
 
             <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
-                class="w-100">
+              <a href="./assest/img/std-1.jpg" ><img src="./assest/img/std-1.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100"></a>
             </div>
 
             <div class="abs-img abs-img-2 has-before">
-              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+              <a href="./assest/img/std-1.jpg"><img src="./assest/img/std-1.jpg" width="133" height="134" loading="lazy" alt=""></a>
             </div>
 
           </figure>
 
-          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+          <a href="courses.html" class="btn btn-primary">
+            <span class="text text-1">Read More</span>
+
+            <span class="text text-2" aria-hidden="true">Read More</span>
+          </a>
 
         </div>
-      </section> -->
-
-
-
-
-
-      <!-- 
-        - #SPECIAL DISH
-      -->
-<!-- 
-      <section class="special-dish text-center" aria-labelledby="dish-label">
-
-        <div class="special-dish-banner">
-          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
-            class="img-cover">
-        </div>
-
-        <div class="special-dish-content bg-black-10">
-          <div class="container">
-
-            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
-
-            <p class="section-subtitle label-2">Special Dish</p>
-
-            <h2 class="headline-1 section-title">Lobster Tortellini</h2>
-
-            <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type.
-            </p>
-
-            <div class="wrapper">
-              <del class="del body-3">$40.00</del>
-
-              <span class="span body-1">$20.00</span>
-            </div>
-
-            <a href="#" class="btn btn-primary">
-              <span class="text text-1">View All Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View All Menu</span>
-            </a>
-
-          </div>
-        </div>
-
-        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
-
-        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
-
-      </section> -->
-
-
-
+      </section> 
 
 
       <!-- 
         - #MENU
       -->
-      <!--
+     
       <section class="section menu" aria-label="menu-label" id="menu">
         <div class="container">
 
@@ -705,354 +668,17 @@
 
         </div>
       </section> 
-    -->
-
     
 
 
 
-
-
-      <!-- 
-        - #TESTIMONIALS
-      -->
-
-      <!-- <section class="section testi text-center has-bg-image"
-        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
-        <div class="container">
-
-          <div class="quote">”</div>
-
-          <p class="headline-2 testi-text">
-            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
-            extraordinary.
-          </p>
-
-          <div class="wrapper">
-            <div class="separator"></div>
-            <div class="separator"></div>
-            <div class="separator"></div>
-          </div>
-
-          <div class="profile">
-            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
-              class="img">
-
-            <p class="label-2 profile-name">Sam Jhonson</p>
-          </div>
-
-        </div>
-      </section> -->
-
-
-
-
-
-      <!-- 
-        - #RESERVATION
-      -->
-
-      <!-- <section class="reservation">
-        <div class="container">
-
-          <div class="form reservation-form bg-black-10">
-
-            <form action="" class="form-left">
-
-              <h2 class="headline-1 text-center">Online Reservation</h2>
-
-              <p class="form-text text-center">
-                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
-                or fill out the order form
-              </p>
-
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
-
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-
-                <div class="icon-wrapper">
-                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                  <select name="person" class="input-field">
-                    <option value="1-person">1 Person</option>
-                    <option value="2-person">2 Person</option>
-                    <option value="3-person">3 Person</option>
-                    <option value="4-person">4 Person</option>
-                    <option value="5-person">5 Person</option>
-                    <option value="6-person">6 Person</option>
-                    <option value="7-person">7 Person</option>
-                  </select>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div class="icon-wrapper">
-                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                  <input type="date" name="reservation-date" class="input-field">
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div class="icon-wrapper">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <select name="person" class="input-field">
-                    <option value="08:00am">08 : 00 am</option>
-                    <option value="09:00am">09 : 00 am</option>
-                    <option value="010:00am">10 : 00 am</option>
-                    <option value="011:00am">11 : 00 am</option>
-                    <option value="012:00am">12 : 00 am</option>
-                    <option value="01:00pm">01 : 00 pm</option>
-                    <option value="02:00pm">02 : 00 pm</option>
-                    <option value="03:00pm">03 : 00 pm</option>
-                    <option value="04:00pm">04 : 00 pm</option>
-                    <option value="05:00pm">05 : 00 pm</option>
-                    <option value="06:00pm">06 : 00 pm</option>
-                    <option value="07:00pm">07 : 00 pm</option>
-                    <option value="08:00pm">08 : 00 pm</option>
-                    <option value="09:00pm">09 : 00 pm</option>
-                    <option value="10:00pm">10 : 00 pm</option>
-                  </select>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </div>
-
-              </div>
-
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
-
-              <button type="submit" class="btn btn-secondary">
-                <span class="text text-1">Book A Table</span>
-
-                <span class="text text-2" aria-hidden="true">Book A Table</span>
-              </button>
-
-            </form>
-
-            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
-
-              <h2 class="headline-1 text-center">Contact Us</h2>
-
-              <p class="contact-label">Booking Request</p>
-
-              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
-
-              <div class="separator"></div>
-
-              <p class="contact-label">Location</p>
-
-              <address class="body-4">
-                Restaurant St, Delicious City, <br>
-                London 9578, UK
-              </address>
-
-              <p class="contact-label">Lunch Time</p>
-
-              <p class="body-4">
-                Monday to Sunday <br>
-                11.00 am - 2.30pm
-              </p>
-
-              <p class="contact-label">Dinner Time</p>
-
-              <p class="body-4">
-                Monday to Sunday <br>
-                05.00 pm - 10.00pm
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section> -->
-
-
-
-
-
-      <!-- 
-        - #FEATURES
-      -->
-
-      <!-- <section class="section features text-center" aria-label="features">
-        <div class="container">
-
-          <p class="section-subtitle label-2">Why Choose Us</p>
-
-          <h2 class="headline-1 section-title">Our Strength</h2>
-
-          <ul class="grid-list">
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Hygienic Food</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Fresh Environment</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Skilled Chefs</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Event & Party</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
-            class="shape shape-1">
-
-          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
-            class="shape shape-2">
-
-        </div>
-      </section> -->
-
-
-
-
-
-      <!-- 
-        - #EVENT
-      -->
-
-      <!-- <section class="section event bg-black-10" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle label-2 text-center">Recent Updates</p>
-
-          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View Our Blog</span>
-
-            <span class="text text-2" aria-hidden="true">View Our Blog</span>
-          </a>
-
-        </div>
-      </section> -->
 
     </article>
   </main>
 
 
   
-  <!-- <footer class="footer section has-bg-image text-center"
+  <footer class="footer section has-bg-image text-center"
     style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
 
@@ -1061,11 +687,12 @@
         <div class="footer-brand has-before has-after">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+            <img src="./assest/img/second-cup.png" width="160" height="50" loading="lazy" alt="grilli home">
           </a>
 
           <address class="body-4">
-            Restaurant St, Delicious City, London 9578, UK
+            Second Cup Coffee And Baristas School<br>
+            Highschool Chowk, Besisahar 33600, Lamjung
           </address>
 
           <a href="mailto:booking@grilli.com" class="body-4 contact-link">cupsecond24@gmail.com</a>
@@ -1082,25 +709,27 @@
             <div class="separator"></div>
           </div>
 
-          <p class="title-1">Get News & Offers</p>
+      <!--
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14060.27073058817!2d84.3747067!3d28.2356253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995736fd5a73a39%3A0x6cd100b0d5303357!2sSecond%20Cup%20Coffee%20and%20Barista%20School!5e0!3m2!1sen!2snp!4v1721129805144!5m2!1sen!2snp"
+       width="600" 
+       height="450" 
+       style="border:0;"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+     ></iframe>
+        -->
+        
+          <div class="map-container">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14060.27073058817!2d84.3747067!3d28.2356253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995736fd5a73a39%3A0x6cd100b0d5303357!2sSecond%20Cup%20Coffee%20and%20Barista%20School!5e0!3m2!1sen!2snp!4v1721129805144!5m2!1sen!2snp"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+     
 
-          <p class="label-1">
-            Subscribe us & Get <span class="span">25% Off.</span>
-          </p>
-
-          <form action="" class="input-wrapper">
-            <div class="icon-wrapper">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">
-              <span class="text text-1">Subscribe</span>
-
-              <span class="text text-2" aria-hidden="true">Subscribe</span>
-            </button>
-          </form>
 
         </div>
 
@@ -1119,11 +748,11 @@
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+            <a href="courses.html" class="label-2 footer-link hover-underline">Courses</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+            <a href="contact.html" class="label-2 footer-link hover-underline">Contact Us</a>
           </li>
 
         </ul>
@@ -1131,23 +760,19 @@
         <ul class="footer-list">
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+            <a href="https://www.facebook.com/people/Second-Cup-Coffee-And-Baristas-School/61558234887752/" class="label-2 footer-link hover-underline">Facebook</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+            <a href="https://www.instagram.com/second.cup2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="label-2 footer-link hover-underline">Instagram</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+            <a href="https://www.youtube.com/@halkavlogs55555" class="label-2 footer-link hover-underline">Youtube</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+            <a href="https://www.google.com/maps/place/Second+Cup+Coffee+and+Barista+School/@28.2356253,84.3747067,15z/data=!4m6!3m5!1s0x3995736fd5a73a39:0x6cd100b0d5303357!8m2!3d28.2356253!4d84.3747067!16s%2Fg%2F11ts476zj0?entry=ttu" class="label-2 footer-link hover-underline">Google Map</a>
           </li>
 
         </ul>
@@ -1157,14 +782,14 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-            target="_blank" class="link">codewithsadee</a>
+          &copy; 2023 Second Cup and Barista School. All Rights Reserved "
+            
         </p>
 
       </div>
 
     </div>
-  </footer> -->
+  </footer> 
 
   
   <!-- 
