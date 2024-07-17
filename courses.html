@@ -4,8 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barista classes</title>
+
+     <!-- google font link  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+   
+     <!-- css link -->
+     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+
+     <!-- 
+        top bar -->
+
+        <div class="topbar">
+            <div class="container">
+                
+                <address class="topbar-item">
+                    <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                    </div>
     
+                    <span class="span">
+                        Highschool Chowk, Besisahar 33600, Lamjung , Nepal
+                    </span>
+                </address>
+    
+                <div class="separator"></div>
+    
+                <div class="topbar-item item-2">
+                    <div class="icon">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    </div>
+            
+                    <span class="span">Daily : 8.00 am to 8.00 pm</span>
+                </div>
+    
+                <a href="tel:+9779865457731" class="topbar-item link">
+                    <div class="icon">
+                      <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                    </div>
+            
+                    <span class="span">+977 9865457731</span>
+                </a>
+    
+                <div class="separtor"></div>
+    
+                <a href="mailto:cupsecond24@gmail.com" class="topbar-item link">
+                    <div class="icon">
+                      <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                    </div>
+            
+                    <span class="span">cupsecond24@gmail.com</span>
+                </a>
+            
+    
+            </div>
+        </div>
+
+    <header class="header" data-header>
+
+        <div class="container">
+            <a href="./assest/img/second-cup.png" class="logo">
+                <img src="./assest/img/second-cup.png" width="55" height="50" alt="Grilli - Home">
+            </a>
+            
+            <nav class="navbar" data-navbar>
+                
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="./assest/img/second-cup.png" class="logo">
+                    <img src="./assest/img/second-cup.png" width="55" height="50" alt="Grilli - Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                      <a href="index.html" class="navbar-link hover-underline active">
+                        <div class="separator"></div>
+          
+                        <span class="span">Home</span>
+                      </a>
+                    </li>
+          
+                    <li class="navbar-item">
+                      <a href="#menu" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+          
+                        <span class="span">Menus</span>
+                      </a>
+                    </li>
+          
+                    <li class="navbar-item">
+                      <a href="#about" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+          
+                        <span class="span">About Us</span>
+                      </a>
+                    </li>
+          
+                    <li class="navbar-item">
+                      <a href="courses.html" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+          
+                        <span class="span">Courses</span>
+                      </a>
+                    </li>
+          
+                    <li class="navbar-item">
+                      <a href="contact.html" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+          
+                        <span class="span">Contact Us</span>
+                      </a>
+                    </li>
+          
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+          
+                    <address class="body-4">
+                      Second Cup Coffee And Baristas School <br>
+                      Highschool Chowk, Besisahar 33600, Lamjung
+                    </address>
+          
+                    <p class="body-4 navbar-text">Open: 8.00 am - 8.00pm</p>
+          
+                    <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">cupsecond24@gmail.com</a>
+          
+                    <div class="separator"></div>
+          
+                    <p class="contact-label">Join Barista Classes</p>
+          
+                    <a href="tel:+977 9865457731" class="body-1 contact-number hover-underline">
+                        +977 9865457731
+                    </a>
+                  </div>
+          
+            </nav>
+
+            
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Join Barista Classes</span>
+
+                <span class="text text-2" aria-hidden="true">Join Barista Classes</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+            
+        </div>
+
+    </header>
+
+
+    <main>
+        <article>
+    
+          <!-- 
+            - #HERO
+          -->
+    
+          <section class="hero text-center" aria-label="home" id="home">
+    
+            <ul class="hero-slider" data-hero-slider>
+    
+              <li class="slider-item active" data-hero-slider-item>
+    
+                <div class="slider-bg">
+                  <img src="./assest/img/kaludai1.png" width="1880" height="950" alt="" class="img-cover">
+                </div>
+    
+                <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+    
+                <h1 class="display-1 hero-title slider-reveal">
+                  For the love of <br>
+                  delicious food
+                </h1>
+    
+                <p class="body-2 hero-text slider-reveal">
+                  Come with family & feel the joy of mouthwatering food
+                </p>
+    
+                <a href="#" class="btn btn-primary slider-reveal">
+                  <span class="text text-1">View Our Menu</span>
+    
+                  <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                </a>
+    
+              </li>
+    
+              <li class="slider-item" data-hero-slider-item>
+    
+                <div class="slider-bg">
+                  <img src="./assest/img/kha-1.png" width="1880" height="950" alt="" class="img-cover">
+                </div>
+    
+                <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+    
+                <h1 class="display-1 hero-title slider-reveal">
+                  Flavors Inspired by <br>
+                  the Seasons
+                </h1>
+    
+                <p class="body-2 hero-text slider-reveal">
+                  Come with family & feel the joy of mouthwatering food
+                </p>
+    
+                <a href="#" class="btn btn-primary slider-reveal">
+                  <span class="text text-1">View Our Menu</span>
+    
+                  <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                </a>
+    
+              </li>
+    
+              <li class="slider-item" data-hero-slider-item>
+    
+                <div class="slider-bg">
+                  <img src="./assest/img/ kha-2.png" width="1880" height="950" alt="" class="img-cover">
+                </div>
+    
+                <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+    
+                <h1 class="display-1 hero-title slider-reveal">
+                  Where every flavor <br>
+                  tells a story
+                </h1>
+    
+                <p class="body-2 hero-text slider-reveal">
+                  Come with family & feel the joy of mouthwatering food
+                </p>
+    
+                <a href="#" class="btn btn-primary slider-reveal">
+                  <span class="text text-1">View Our Menu</span>
+    
+                  <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                </a>
+    
+              </li>
+    
+            </ul>
+    
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+              <ion-icon name="chevron-back"></ion-icon>
+            </button>
+    
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+    
+          </section>    
+        </article>
+    </main>    
 </body>
 </html>
