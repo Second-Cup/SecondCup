@@ -3,133 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barista classes</title>
+    <title>Menu</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  
+    <!-- css link -->
+    <link rel="stylesheet" href="./style/style.css">
 
-     <!-- google font link  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
-   
-     <!-- css link -->
-     <link rel="stylesheet" href="./style/style.css">
-
-       <!-- 
+    <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./assest/img/second-cup.png" type="image/png">
 
-  <style>
-    
-/* In your style/style.css or wherever your main styles are defined */
-
-body {
-    overflow-y: auto; /* Ensure vertical scrolling is enabled */
-}
-
-
-
-.slider-bg {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-    overflow: hidden;
-}
-
-.kaludada {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover; /* Ensures the video covers the entire container */
-}
-
-/* For smaller screens, adjust the height if needed */
-@media (max-width: 768px) {
-    .slider-bg {
-        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens if needed */
-    }
-}
-
-.course{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: var(--gold-crayola); 
-    margin: 0;
-    font-size: 3em;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    gap: 40px; /* Space between elements, adjust as needed */
-}
-
-
-.text-container {
-    flex: 1;
-    margin-right: 20px; /* Adjust as needed */
-}
-
-.text-container h2{
-    font-family: 'Times New Roman', Times, serif;
-}
-.bullet-points {
-    padding-left: 40px; /* Add padding to the left for space */
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.bullet-points li {
-    margin-bottom: 10px; /* Add space between bullet points */
-    list-style-type: disc; /* Add bullet points */
-}
-
-.image-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.image-container video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.1%; /* Make image circular */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover effect for the image */
-.image-container img:hover {
-    transform: scale(1.01); /* Slightly enlarge the image on hover */
-    cursor: pointer;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-    
-    .text-container {
-        margin-right: 0; /* Remove right margin for stacking */
-        margin-bottom: 20px; /* Add bottom margin for spacing */
-    }
-    
-    .image-container {
-        justify-content: center; /* Center the image horizontally */
-    }
-}
-
-  </style>
 
 </head>
 <body>
 
-     <!-- 
+         <!-- 
         top bar -->
 
         <div class="topbar">
@@ -281,96 +173,12 @@ body {
 
     </header>
 
-
-    <main>
-        <article>
     
-          <!-- 
-            - #HERO
-          -->
     
-          <section class="hero text-center" aria-label="home" id="home">
-    
-            <ul class="hero-slider" data-hero-slider>
-    
-              <li class="slider-item active" data-hero-slider-item>
-    
-                    <div class="slider-bg">
-                        
-                        <video autoplay loop muted playsinline class="kaludada">
-                            <source src="./assest/img/second.mp4" type="video/mp4">
-                        </video>
-                        
-                    </div>
-                    <p class="label-2 section-subtitle slider-reveal">Second Cup Barista School</p>
-
-                    <h1 class="display-1 hero-title slider-reveal">
-                        Master the Art of Coffee <br>
-                        One Cup at a Time!
-                    </h1>
-        
-                    <p class="body-2 hero-text slider-reveal">
-                        From Bean to Cup
-                    </p>
-        
-                    <a href="#" class="btn btn-primary slider-reveal">
-                      <span class="text text-1">Enroll Now</span>
-        
-                      <span class="text text-2" aria-hidden="true">Enroll Now</span>
-                    </a>
-              </li>
-            </ul>
-              
-    
-          </section>    
-        </article>
-
-        <br><br><br>
-
-        <h1 class="course">
-            Why Us?
-
-        </h1>
-
-        <section class="section about barista classes"aria-labelledby="about-label" id="barista-section-2" >
-            <div class="container">
-                <div class="text-container">
-                    <h2>Barista Classes Highlights</h2>
-                    <br>
-                    <ul class="bullet-points">
-                        <li>Comprehensive coffee brewing techniques</li> <br>
-                        <li>Hands-on practice with professional equipment</li> <br>
-                        <li>Expert instructors with years of experience</li> <br>
-                        <li>Latte art and advanced coffee designs</li> <br>
-                        <li>Understanding coffee origins and flavors</li> <br>
-                    </ul>
-                </div>
-                <div class="image-container">
-                    <video autoplay loop muted playsinline class="kaluda">
-                        <source src="./assest/img/second.mp4" type="video/mp4">
-                    </video>
-                    
-                </div>
-            </div>
-            
-        </section>
-    </main>    
- 
-
-  
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
-
-
-
   <script src="./style/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    
 </body>
 </html>
