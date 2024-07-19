@@ -19,26 +19,102 @@
   <link rel="shortcut icon" href="./assest/img/second-cup.png" type="image/png">
 
   <style>
-    .kaludada{
-        position:  absolute;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-    }
+    
+/* In your style/style.css or wherever your main styles are defined */
 
-    @media (min-aspect-ratio:16/9){
-        .kaludada{
-            width: 100%;
-            height: auto;
-        }
-    }
+body {
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+}
 
-    @media (max-aspect-ratio:16/9){
-        .kaludada{
-            width: auto;
-            height: 100%;
-        }
+
+
+.slider-bg {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+}
+
+.kaludada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+/* For smaller screens, adjust the height if needed */
+@media (max-width: 768px) {
+    .slider-bg {
+        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens if needed */
     }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 40px; /* Space between elements, adjust as needed */
+}
+
+.text-container {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.text-container h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.bullet-points {
+    padding-left: 40px; /* Add padding to the left for space */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bullet-points li {
+    margin-bottom: 10px; /* Add space between bullet points */
+    list-style-type: disc; /* Add bullet points */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.1%; /* Make image circular */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the image */
+.image-container img:hover {
+    transform: scale(1.01); /* Slightly enlarge the image on hover */
+    cursor: pointer;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .text-container {
+        margin-right: 0; /* Remove right margin for stacking */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+    
+    .image-container {
+        justify-content: center; /* Center the image horizontally */
+    }
+}
+
   </style>
 
 </head>
@@ -212,7 +288,7 @@
     
                     <div class="slider-bg">
                         
-                        <video autoplay loop muted plays-inline class="kaludada">
+                        <video autoplay loop muted playsinline class="kaludada">
                             <source src="./assest/img/second.mp4" type="video/mp4">
                         </video>
                         
@@ -239,124 +315,30 @@
     
           </section>    
         </article>
+
+        <section class="section about barista classes"aria-labelledby="about-label" id="barista-section-2" >
+            <div class="container">
+                <div class="text-container">
+                    <h2>Barista Classes Highlights</h2>
+                    <br>
+                    <ul class="bullet-points">
+                        <li>Comprehensive coffee brewing techniques</li> <br>
+                        <li>Hands-on practice with professional equipment</li> <br>
+                        <li>Expert instructors with years of experience</li> <br>
+                        <li>Latte art and advanced coffee designs</li> <br>
+                        <li>Understanding coffee origins and flavors</li> <br>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./assest/img/ kha.png" alt="Barista Classes">
+                </div>
+            </div>
+            
+        </section>
     </main>    
  
 
-    
   
-  <footer class="footer section has-bg-image text-center"
-  style="background-image: url('./assets/images/footer-bg.jpg')">
-  <div class="container">
-
-    <div class="footer-top grid-list">
-
-      <div class="footer-brand has-before has-after">
-
-        <a href="#" class="logo">
-          <img src="./assest/img/second-cup.png" width="160" height="50" loading="lazy" alt="grilli home">
-        </a>
-
-        <address class="body-4">
-          Second Cup Coffee And Baristas School<br>
-          Highschool Chowk, Besisahar 33600, Lamjung
-        </address>
-
-        <a href="mailto:booking@grilli.com" class="body-4 contact-link">cupsecond24@gmail.com</a>
-
-        <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +977 9865457731 / +977 9817174507</a>
-
-        <p class="body-4">
-          Open : 8:00 am - 8:00 pm
-        </p>
-
-        <div class="wrapper">
-          <div class="separator"></div>
-          <div class="separator"></div>
-          <div class="separator"></div>
-        </div>
-
-    <!--
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14060.27073058817!2d84.3747067!3d28.2356253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995736fd5a73a39%3A0x6cd100b0d5303357!2sSecond%20Cup%20Coffee%20and%20Barista%20School!5e0!3m2!1sen!2snp!4v1721129805144!5m2!1sen!2snp"
-     width="600" 
-     height="450" 
-     style="border:0;"
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"
-   ></iframe>
-      -->
-      
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14060.27073058817!2d84.3747067!3d28.2356253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995736fd5a73a39%3A0x6cd100b0d5303357!2sSecond%20Cup%20Coffee%20and%20Barista%20School!5e0!3m2!1sen!2snp!4v1721129805144!5m2!1sen!2snp"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-   
-
-
-      </div>
-
-      <ul class="footer-list">
-
-        <li>
-          <a href="#" class="label-2 footer-link hover-underline">Home</a>
-        </li>
-
-        <li>
-          <a href="#" class="label-2 footer-link hover-underline">Menus</a>
-        </li>
-
-        <li>
-          <a href="#" class="label-2 footer-link hover-underline">About Us</a>
-        </li>
-
-        <li>
-          <a href="courses.html" class="label-2 footer-link hover-underline">Courses</a>
-        </li>
-
-        <li>
-          <a href="contact.html" class="label-2 footer-link hover-underline">Contact Us</a>
-        </li>
-
-      </ul>
-
-      <ul class="footer-list">
-
-        <li>
-          <a href="https://www.facebook.com/people/Second-Cup-Coffee-And-Baristas-School/61558234887752/" class="label-2 footer-link hover-underline">Facebook</a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/second.cup2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="label-2 footer-link hover-underline">Instagram</a>
-        </li>
-
-        <li>
-          <a href="https://www.youtube.com/@halkavlogs55555" class="label-2 footer-link hover-underline">Youtube</a>
-        </li>
-
-        <li>
-          <a href="https://www.google.com/maps/place/Second+Cup+Coffee+and+Barista+School/@28.2356253,84.3747067,15z/data=!4m6!3m5!1s0x3995736fd5a73a39:0x6cd100b0d5303357!8m2!3d28.2356253!4d84.3747067!16s%2Fg%2F11ts476zj0?entry=ttu" class="label-2 footer-link hover-underline">Google Map</a>
-        </li>
-
-      </ul>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <p class="copyright">
-        &copy; 2023 Second Cup and Barista School. All Rights Reserved "
-          
-      </p>
-
-    </div>
-
-  </div>
-</footer> 
-
   <!-- 
     - #BACK TO TOP
   -->
@@ -370,5 +352,6 @@
   <script src="./style/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

@@ -45,6 +45,36 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all navbar links
+  var navLinks = document.querySelectorAll('.navbar-link');
+
+  // Function to update the active class
+  function updateActiveLink(clickedLink) {
+      navLinks.forEach(function(link) {
+          if (link === clickedLink) {
+              link.classList.add('active');
+          } else {
+              link.classList.remove('active');
+          }
+      });
+  }
+
+  // Add event listeners to the links to update the active class on click
+  navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+          updateActiveLink(link);
+      });
+  });
+
+  // Initial check to set the "Home" link as active by default
+  var currentPath = window.location.pathname;
+  navLinks.forEach(function(link) {
+      if (currentPath.includes(link.getAttribute('href'))) {
+          updateActiveLink(link);
+      }
+  });
+});
 
 
 /**
@@ -141,4 +171,30 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
 window.addEventListener("load", autoSlide);
- 
+
+
+
+/**
+ * PARALLAX EFFECT
+ */
+
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x, y;
+
+window.addEventListener("mousemove", function (event) {
+
+  x = (event.clientX / window.innerWidth * 10) - 5;
+  y = (event.clientY / window.innerHeight * 10) - 5;
+
+  // reverse the number eg. 20 -> -20, -5 -> 5
+  x = x - (x * 2);
+  y = y - (y * 2);
+
+  for (let i = 0, len = parallaxItems.length; i < len; i++) {
+    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+
+});

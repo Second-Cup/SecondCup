@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Animated Barista Classes Section</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* style.css */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: zoomIn 3s ease-in-out;
+}
+
+.text-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+h2 {
+    font-family: 'Forum', serif;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.bullet-points {
+    list-style-type: none; /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+}
+
+.bullet-points li {
+    margin: 10px 0;
+    padding-left: 20px;
+    line-height: 1.6;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    animation-delay: calc(0.5s * var(--i));
+}
+
+.bullet-points li::before {
+    content: '•'; /* Custom bullet symbol */
+    color: #FF6600; /* Bullet color */
+    font-size: 20px; /* Bullet size */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+    </style>
 </head>
+
 <body>
-    
+
+    <section class="section about barista-classes" aria-labelledby="about-label" id="barista-section-1">
+        <div class="image-container">
+            <img src="./assest/img/kha.png" alt="Barista Classes">
+        </div>
+        <div class="text-container">
+            <h2>Barista Classes Highlights</h2>
+            <ul class="bullet-points">
+                <li>Comprehensive coffee brewing techniques</li>
+                <li>Hands-on practice with professional equipment</li>
+                <li>Expert instructors with years of experience</li>
+                <li>Latte art and advanced coffee designs</li>
+                <li>Understanding coffee origins and flavors</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
