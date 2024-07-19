@@ -97,31 +97,8 @@ body {
 .image-container video {
     max-width: 100%;
     height: auto;
-    border-radius: 0.1%; /* Make image circular */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover effect for the image */
-.image-container img:hover {
-    transform: scale(1.01); /* Slightly enlarge the image on hover */
-    cursor: pointer;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-    
-    .text-container {
-        margin-right: 0; /* Remove right margin for stacking */
-        margin-bottom: 20px; /* Add bottom margin for spacing */
-    }
-    
-    .image-container {
-        justify-content: center; /* Center the image horizontally */
-    }
+    border-radius: 2.5%; /* Make image circular */
+   
 }
 
   </style>
@@ -322,7 +299,8 @@ body {
             </ul>
               
     
-          </section>    
+          </section> 
+             
         </article>
 
         <br><br><br>
