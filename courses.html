@@ -53,6 +53,14 @@ body {
     }
 }
 
+.course{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--gold-crayola); 
+    margin: 0;
+    font-size: 3em;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -60,6 +68,7 @@ body {
     flex-wrap: wrap; /* Allow wrapping for responsiveness */
     gap: 40px; /* Space between elements, adjust as needed */
 }
+
 
 .text-container {
     flex: 1;
@@ -85,7 +94,7 @@ body {
     justify-content: flex-end;
 }
 
-.image-container img {
+.image-container video {
     max-width: 100%;
     height: auto;
     border-radius: 0.1%; /* Make image circular */
@@ -316,6 +325,13 @@ body {
           </section>    
         </article>
 
+        <br><br><br>
+
+        <h1 class="course">
+            Why Us?
+
+        </h1>
+
         <section class="section about barista classes"aria-labelledby="about-label" id="barista-section-2" >
             <div class="container">
                 <div class="text-container">
@@ -330,7 +346,10 @@ body {
                     </ul>
                 </div>
                 <div class="image-container">
-                    <img src="./assest/img/ kha.png" alt="Barista Classes">
+                    <video autoplay loop muted playsinline class="kaluda">
+                        <source src="./assest/img/second.mp4" type="video/mp4">
+                    </video>
+                    
                 </div>
             </div>
             
