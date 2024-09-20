@@ -30,6 +30,7 @@
 <style>
   body {
     overflow-y: auto; /* Ensure vertical scrolling is enabled */
+  
 }
 
 .container-contact{
@@ -38,7 +39,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 30px 8%;
+
+  
 }
 
 .container-contact .row{
@@ -80,7 +82,7 @@ section.left .contactTitle h2::after{
 	position: absolute;
 	width: 25%;
 	height: 3px;
-	background-color: #ffb940;
+	background-color: #e4c590;
 	top: calc(120% - 1px);
 	left: 0;
 }
@@ -102,7 +104,7 @@ section.left .contactInfo{
 .iconGroup .icon{
 	width: 45px;
 	height: 45px;
-	border: 2px solid #ffb940;
+	border: 2px solid #e4c590;
 	border-radius: 50%;
 	margin-right: 20px;
 	position: relative;
@@ -138,7 +140,7 @@ section.left .socialMedia{
 	text-align: center;
 	margin-right: 15px;
 	border-radius: 5px;
-	background-color: #ffb940; 	#e4c590
+	background-color: #e4c590; 	#e4c590
 	transition: 0.4s;
 }
 .socialMedia a i{
@@ -151,7 +153,7 @@ section.left .socialMedia{
 .socialMedia a:hover{
 	transform: translateY(-5px);
 	background-color: #2e2e2e;
-	background-color: #ffb940; 	
+	background-color: #e4c590; 	
 	color: #e4c590;
 	border: 1px solid rgb(0, 0, 0);
 }
@@ -200,7 +202,7 @@ textarea::-webkit-scrollbar-track{
 	border-radius: 15px;
 }
 textarea::-webkit-scrollbar-thumb{
-	background-color: #ffb940;
+	background-color: #e4c590;
 	border-radius: 15px;
 }
 .inputGroup label{
@@ -224,8 +226,8 @@ textarea::-webkit-scrollbar-thumb{
 .inputGroup button{
 	padding: 8px 16px;
 	font-size: 18px;
-	background-color: #ffb940;
-	color: #ddd;
+	background-color: #e4c590;
+	color: #000000;
 	border: 1px solid transparent;
 	border-radius: 25px;
 	outline: none;
@@ -235,24 +237,37 @@ textarea::-webkit-scrollbar-thumb{
 }
 .inputGroup button:hover{
 	background-color: #2e2e2e;
-	color: dodgerblue;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-	border: 1px solid dodgerblue;
+	color: rgb(0, 0, 0);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
+	border: 1px solid #e4c590;
 }
-@media(max-width: 1100px){
-	.messageForm .halfWidth{
-		flex-basis: 100%;
-	}
+
+@media only screen and (max-width: 600px){
+  .container-contact .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .row section.left,
+  .row section.right {
+    flex-basis: 100%;
+    margin: 15px;
+    padding: 0;
+  }
+
+  /* Form fields and button below the icons */
+  .row section.left {
+    margin-bottom: 0px;
+  }
+
+  /* Ensure input fields take full width */
+  .messageForm .halfWidth {
+    flex-basis: 100%;
+  }
 }
-@media(max-width: 900px){
-	.container .row{
-		flex-wrap: wrap;
-	}
-	.row section.left, .row section.right{
-		flex-basis: 100%;
-		margin: 0px;
-	}
-}
+
+
+
 
 </style>
 </head>
@@ -412,7 +427,8 @@ textarea::-webkit-scrollbar-thumb{
 <br>
 <br>
 <br>
-
+<br>
+<br>
     <main>
       
       <div class="container-contact">
@@ -530,7 +546,7 @@ textarea::-webkit-scrollbar-thumb{
 
     
     
-<footer class="footer section has-bg-image text-center"  
+<!-- <footer class="footer section has-bg-image text-center"  
   style="background-image: url('./assets/images/footer-bg.jpg')">
   <div class="container">
 
@@ -633,9 +649,8 @@ textarea::-webkit-scrollbar-thumb{
   </div>
 </footer> 
 
-    <script src="app.js"></script>
-
-    
+     -->
+  <script src="app.js"></script> 
   <script src="./style/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
