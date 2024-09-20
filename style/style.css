@@ -961,14 +961,49 @@
     gap: 20px;
   }
   
+
   .hover\:card .card-banner { background-color: var(--gold-crayola); }
   
-  .hover\:card .card-banner .img-cover { transition: var(--transition-2); }
+  .menu-card .img-holder {
+    width: 150px; /* Adjust to match your desired container width */
+    height: 150px; /* Adjust to match your desired container height */
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-24); /* Keep the border-radius */
+    background-color: var(--gold-crayola); /* Keep the background color */
+  }
+  
+  .menu-card .img-cover {
+    width: 100%; /* Image will scale to fill the container */
+    height: 100%; /* Image will scale to fill the container */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    object-position: center; /* Keeps the focal point in the center */
+    transition: var(--transition-2); /* Keeps the transition for hover effects */
+  }
+  
+  .hover\:card:is(:hover, :focus-within) .img-cover {
+    opacity: 0.7; /* Maintain opacity effect on hover */
+    transform: scale(1.01); /* Maintain scaling effect on hover */
+    object-fit: cover; /* Ensure the image still covers the container on hover */
+  }
+  
+  .hover\:card .card-banner .img-cover { 
+    
+    max-width: auto;
+    height: auto;
+    overflow: hidden;
+    transition: var(--transition-2); }
   
   .hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+    width: auto;
+    height: auto;
+    object-fit: cover;
     opacity: 0.7;
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
+  
+ 
   
   .menu-card .card-banner {
     flex-shrink: 0;
