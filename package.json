@@ -1,0 +1,27 @@
+{
+  "name": "secondcup",
+  "version": "1.0.0",
+  "description": "website for a cafe named SecondCup that also provides barista classes",
+  "main": "backend/index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bijen-Thapa/SecondCup.git"
+  },
+  "author": "Bijen Thapa & Achyut Tamang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bijen-Thapa/SecondCup/issues"
+  },
+  "homepage": "https://github.com/Bijen-Thapa/SecondCup#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
