@@ -44,7 +44,7 @@ p {
 }
 
 .handle {
-  background: #ffe500;
+  /* background: #ffe500; */
   width: 14px;
   height: 30px;
   top: 0;
