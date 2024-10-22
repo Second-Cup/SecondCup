@@ -263,17 +263,16 @@
       	font-size: 18px;
       	line-height: 35px;
       	border: 1px solid transparent;
-      	transition-delay: 0.4s;
       }
       .socialMedia a:hover{
-      	transform: translateY(-5px);
+      	transform: scale(-5px);
       	background-color: #2e2e2e;
       	background-color: #e4c590;
       	color: #e4c590;
       	border: 1px solid rgb(0, 0, 0);
       }
       .socialMedia a:hover i{
-      	color: #e4c590;
+      	color: #000000;
       }
 
       /* Code for the right section (column) */
@@ -407,7 +406,7 @@
               <p class="body-2 hero-text slider-reveal">From Bean to Cup</p>
 
               <a
-                href="contact.html#container-contact"
+                href="/courses#container-contact"
                 class="btn btn-primary slider-reveal"
               >
                 <span class="text text-1">Enroll Now</span>
@@ -476,26 +475,6 @@
               <li>Understanding coffee origins and flavors</li>
             </ul>
           </div>
-
-          <!--                
-                <div class="image-container">
-                    <video autoplay loop muted playsinline class="kaluda">
-                        <source src="./assest/img/blurloogon.mp4" type="video/mp4">
-                    </video>
-                    
-                </div>
-
-                <div class="text-container">
-                    <h2>Barista Classes Highlights</h2>
-                    <br>
-                    <ul class="bullet-points">
-                        <li>Comprehensive coffee brewing techniques</li> <br>
-                        <li>Hands-on practice with professional equipment</li> <br>
-                        <li>Expert instructors with years of experience</li> <br>
-                        <li>Latte art and advanced coffee designs</li> <br>
-                        <li>Understanding coffee origins and flavors</li> 
-                    </ul>
-                </div> -->
         </div>
       </section>
 
@@ -526,7 +505,7 @@
                 </div>
                 <div class="details">
                   <span>Phone</span>
-                  <span>+977 9865457731</span>
+                  <a href="tel:+9779865457731"><span>+977 9865457731</span></a>
                 </div>
               </div>
 
@@ -546,9 +525,7 @@
                 </div>
                 <div class="details">
                   <span>Location</span>
-                  <span
-                    >Highschool Chowk, Besisahar 33600, Lamjung , Nepal</span
-                  >
+                  <span>Highschool Chowk, Besisahar <br />Lamjung , Nepal</span>
                 </div>
               </div>
             </div>
@@ -558,8 +535,13 @@
             <!--  *******   Social Media Starts   *******  -->
 
             <div class="socialMedia">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.facebook.com/people/Second-Cup-Coffee-And-Baristas-School/61558234887752/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/second.cup2/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
 
             <!--  *******   Social Media Ends   *******  -->
@@ -570,8 +552,6 @@
           <!--  *******   Right Section (Column) Starts   *******  -->
 
           <section class="col right">
-            <!--  *******   Form Starts   *******  -->
-
             <!--  *******   Form Starts   *******  -->
             <form
               class="messageForm"
@@ -607,7 +587,7 @@
 
               <div class="inputGroup fullWidth">
                 <textarea required="required" name="message"></textarea>
-                <label>Say Something</label>
+                <label style="top: 4px">Say Something</label>
               </div>
 
               <div class="inputGroup fullWidth">

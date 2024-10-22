@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Bijen-Thapa/SecondCup#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "express-session": "^1.18.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
