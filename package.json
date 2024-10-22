@@ -4,8 +4,7 @@
   "description": "website for a cafe named SecondCup that also provides barista classes",
   "main": "backend/index.js",
   "scripts": {
-    "test": "test",
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
