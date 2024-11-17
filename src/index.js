@@ -43,4 +43,4 @@ app.all("*", (req, res) => {
   res.render("404");
 });
 
-export.modules = app
+export.modules = app;
