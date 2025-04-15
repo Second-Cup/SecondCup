@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barista classes</title>
-
+    <title>Contact</title>
     <!-- google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +13,7 @@
     />
 
     <!-- css link -->
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/style.css" />
 
     <!-- 
@@ -41,102 +41,8 @@
     />
 
     <style>
-      /* In your style/style.css or wherever your main styles are defined */
-
       body {
         overflow-y: auto; /* Ensure vertical scrolling is enabled */
-      }
-
-      .slider-bg {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-        overflow: hidden;
-      }
-
-      .kaludada {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        object-fit: cover; /* Ensures the video covers the entire container */
-      }
-
-      /* For smaller screens, adjust the height if needed */
-      @media (max-width: 768px) {
-        .slider-bg {
-          padding-bottom: 75%; /* Adjust aspect ratio for smaller screens if needed */
-        }
-      }
-
-      .course {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        color: var(--gold-crayola);
-        margin: 0;
-        font-size: 3em;
-      }
-
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap; /* Allow wrapping for responsiveness */
-        gap: 40px; /* Space between elements, adjust as needed */
-      }
-
-      .text-container {
-        flex: 1;
-        margin-right: 20px; /* Adjust as needed */
-      }
-
-      .text-container h2 {
-        font-family: "Times New Roman", Times, serif;
-      }
-
-      .bullet-points {
-        padding-left: 40px; /* Add padding to the left for space */
-        font-family: "Courier New", Courier, monospace;
-      }
-
-      .bullet-points li {
-        margin-bottom: 10px; /* Add space between bullet points */
-        list-style-type: disc; /* Add bullet points */
-      }
-
-      .image-container {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .image-container video {
-        max-width: 100%;
-        height: auto;
-        border-radius: 2.5%; /* Make image circular */
-      }
-      .image-container-2 {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-      }
-      .image-container-2 video {
-        max-width: 100%;
-        height: auto;
-        border-radius: 2.5%;
-      }
-
-      .bullet-points-2 {
-        padding-left: 40px; /* Add padding to the left for space */
-        font-family: "Courier New", Courier, monospace;
-      }
-
-      .bullet-points-2 li {
-        margin-bottom: 10px; /* Add space between bullet points */
-        list-style-type: disc; /* Add bullet points */
       }
 
       .container-contact {
@@ -251,6 +157,7 @@
         font-size: 18px;
         line-height: 35px;
         border: 1px solid transparent;
+        transition-delay: 0.4s;
       }
       .socialMedia a:hover {
         transform: scale(-5px);
@@ -310,7 +217,7 @@
       }
       .inputGroup label {
         position: absolute;
-        left: 0;
+        left: 4px;
         bottom: 4px;
         color: #888;
         font-size: 18px;
@@ -372,107 +279,170 @@
     </style>
   </head>
   <body>
-    <%- include('nav') %>
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
 
-    <main>
-      <article>
-        <section class="hero text-center" aria-label="home" id="home">
-          <ul class="hero-slider" data-hero-slider>
-            <li class="slider-item active" data-hero-slider-item>
-              <div class="slider-bg">
-                <video autoplay loop muted playsinline class="kaludada">
-                  <source src="./assest/img/caap.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <p class="label-2 section-subtitle slider-reveal">
-                Second Cup Barista School
-              </p>
+          <span class="span">
+            Highschool Chowk, Besisahar 33600, Lamjung , Nepal
+          </span>
+        </address>
 
-              <h1 class="display-1 hero-title slider-reveal">
-                Master the Art of Coffee <br />
-                One Cup at a Time!
-              </h1>
+        <div class="separator"></div>
 
-              <p class="body-2 hero-text slider-reveal">From Bean to Cup</p>
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
 
-              <a
-                href="/courses#container-contact"
-                class="btn btn-primary slider-reveal"
-              >
-                <span class="text text-1">Enroll Now</span>
+          <span class="span">Daily : 8.00 am to 8.00 pm</span>
+        </div>
 
-                <span class="text text-2" aria-hidden="true">Enroll Now</span>
+        <a href="tel:+9779865457731" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">+977 9865457731</span>
+        </a>
+
+        <div class="separtor"></div>
+
+        <a href="mailto:cupsecond24@gmail.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">cupsecond24@gmail.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!--  
+               Header  
+          -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html#top" class="logo">
+          <img
+            src="./assest/img/second-cup.png"
+            width="55"
+            height="50"
+            alt="Grilli - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="index.html#top" class="logo">
+            <img
+              src="./assest/img/second-cup.png"
+              width="55"
+              height="50"
+              alt="Grilli - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="menu.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="courses.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Courses</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact Us</span>
               </a>
             </li>
           </ul>
-        </section>
-      </article>
 
-      <br /><br /><br />
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
 
-      <h1 class="course">Why Us?</h1>
+            <address class="body-4">
+              Second Cup Coffee And Baristas School <br />
+              Highschool Chowk, Besisahar 33600, Lamjung
+            </address>
 
-      <section
-        class="section about barista classes"
-        aria-labelledby="about-label"
-        id="barista-section-2"
-      >
-        <div class="container">
-          <div class="text-container">
-            <h2>What Do You Learn Here?</h2>
-            <br />
-            <ul class="bullet-points">
-              <li>Introduction To Coffee</li>
-              <br />
-              <li>Espresso Extraction And Calibration</li>
-              <br />
-              <li>Latte Arts And Milk Techniques</li>
-              <br />
-              <li>Espresso Based Beverages ( Hot & Cold )</li>
-              <br />
-              <li>Art Of Brewing</li>
-            </ul>
+            <p class="body-4 navbar-text">Open: 8.00 am - 8.00pm</p>
+
+            <a href="mailto:booking@grilli.com" class="body-4 sidebar-link"
+              >cupsecond24@gmail.com</a
+            >
+
+            <div class="separator"></div>
+
+            <a href="courses.html#container-contact"></a>
+            <p class="contact-label">Join Barista Classes</p>
+
+            <a
+              href="tel:+977 9865457731"
+              class="body-1 contact-number hover-underline"
+            >
+              +977 9865457731
+            </a>
           </div>
-          <div class="image-container">
-            <video autoplay loop muted playsinline class="kaluda">
-              <source src="./assest/img/pour.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
-      <br />
+        </nav>
 
-      <section class="section-2 barista class" id="barista-section-3">
-        <div class="container">
-          <div class="image-container-2">
-            <video autoplay loop muted playsinline class="kaluda">
-              <source src="./assest/img/blurloogon.mp4" type="video/mp4" />
-            </video>
-          </div>
+        <a href="courses.html#container-contact" class="btn btn-secondary">
+          <span class="text text-1">Join Barista Classes</span>
 
-          <div class="text-container-2">
-            <h2>Barista Classes Highlights</h2>
-            <br />
-            <ul class="bullet-points-2">
-              <li>Comprehensive coffee brewing techniques</li>
-              <br />
-              <li>Hands-on practice with professional equipment</li>
-              <br />
-              <li>Expert instructors with years of experience</li>
-              <br />
-              <li>Latte art and advanced coffee designs</li>
-              <br />
-              <li>Understanding coffee origins and flavors</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+          <span class="text text-2" aria-hidden="true"
+            >Join Barista Classes</span
+          >
+        </a>
 
-      <br />
-      <br />
-      <br />
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
 
-      <div class="container-contact" id="container-contact">
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <main>
+      <div class="container-contact">
         <main class="row">
           <!--  *******   Left Section (Column) Starts   *******  -->
 
@@ -481,7 +451,7 @@
 
             <div class="contactTitle">
               <h2>Get In Touch</h2>
-              <p>Send Us Your Query to join our barista calsses.</p>
+              <p>Send Us Your Query to join our barista class.</p>
             </div>
 
             <!--  *******   Title Ends   *******  -->
@@ -593,19 +563,7 @@
       </div>
     </main>
 
-    <!-- 
-    - #BACK TO TOP
-  -->
-
-    <a
-      href="#top"
-      class="back-top-btn active"
-      aria-label="back to top"
-      data-back-top-btn
-    >
-      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-    </a>
-
+    <script src="app.js"></script>
     <script src="./style/main.js"></script>
     <script
       type="module"
